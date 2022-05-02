@@ -43,6 +43,15 @@ form.addEventListener('submit', (e) => {
     // Create an object to "model" you statistic like the following:
     // { player: 'Bob', points: 2 }
     // Hint -- create the object from the form, push it onto the stats array, then call renderStats
+
+    let stat = {
+        playerName: formData.get ('player'),
+        playerPoints: formData.get ('points'),
+    };
+
+    stats.push(stat);
+    console.log('List of stats', stats);
+    
     
 });
 
