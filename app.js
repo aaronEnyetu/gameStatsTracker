@@ -45,14 +45,14 @@ form.addEventListener('submit', (e) => {
     // Hint -- create the object from the form, push it onto the stats array, then call renderStats
 
     let stat = {
-        playerName: formData.get ('player'),
-        playerPoints: formData.get ('points'),
+        player: formData.get ('player'),
+        points: formData.get ('points'),
     };
 
     stats.push(stat);
     console.log('List of stats', stats);
     
-    
+    renderStats();
 });
 
 remove.addEventListener('click', () => {
